@@ -148,46 +148,79 @@ header {
   justify-content: flex-end;
   margin-top: 25px;
 }
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+    align-content: center;
+  }
+}
 header nav a {
-  margin-left: 30px;
+  margin-left: 3rem;
   text-decoration: none;
   color: lightseagreen;
+  border: 1px dashed pink;
 }
 .main-content #top {
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 2.5rem auto;
-  margin-left: 3rem;
-  background-color: lightsalmon;
+  background-color: lightcoral;
 }
 .main-content #top .intro {
-  margin: 0 10%;
+  width: 100%;
+  margin: 1% 1%;
   padding: 15px;
   display: flex;
   flex-direction: column;
 }
 .main-content #top .intro h1 {
-  font-size: 4.8rem;
-  margin: 1rem 0;
+  width: 100%;
+  font-size: 6.5rem;
+  margin: 3rem 0;
+  text-align: center;
 }
 .main-content #top .intro h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.main-content #top .intro p {
+  text-align: center;
   font-size: 3rem;
-  margin: 0.5rem 0;
+  margin-bottom: 2rem;
 }
 .main-content #top .intro button {
+  display: flex;
+  justify-content: center;
   background-color: lightseagreen;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 0.9rem 1.3rem;
-  border-radius: 4px;
+  padding: 2rem 2rem;
+  border-radius: 10px;
   margin: 1.5rem auto;
+  font-size: 3rem;
 }
 .main-content #top .photo {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .main-content #top .photo {
+    display: none;
+  }
+}
+.main-content #top .photo img {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .main-content #top .photo img {
+    display: none;
+  }
 }
 .main-content #middle {
   max-width: 100%;
@@ -195,18 +228,36 @@ header nav a {
   justify-content: space-between;
   width: 100%;
   margin: 2.5rem auto;
-  margin-left: 3rem;
-  background-color: lightcyan;
+  background-color: lightseagreen;
 }
 .main-content #middle h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: bold;
+  margin: 2.7rem 0 1rem 1rem;
 }
-.main-content #middle h2 li {
-  font-size: 2rem;
+.main-content #middle .skills {
+  width: 50%;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+}
+.main-content #middle .skills ul {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.main-content #middle .skills ul li {
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+.main-content #middle .ob {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 .main-content #middle .ob p {
-  font-size: 1.6rem;
+  font-size: 3rem;
+  padding-top: 2rem;
 }
 .main-content #bottom {
   max-width: 100%;
@@ -214,14 +265,15 @@ header nav a {
   flex-direction: column;
   width: 100%;
   margin: 2.5rem auto;
-  margin-left: 3rem;
   background-color: lightcyan;
 }
-.main-content #bottom h2 {
-  margin: 2rem auto;
-}
 .main-content footer {
+  max-width: 100%;
   width: 100%;
   display: flex;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
   justify-content: center;
+  background-color: lightgrey;
+  color: lightseagreen;
 }
